@@ -29,11 +29,30 @@ $ npm -v
 ### Download the source code
 ```shell
 [~]$ git clone https://github.com/daintree-henry/msa-sample-officeboard-webapp.git
+[~]$ cd samplemsa-officeboard-webapp
+[~/samplemsa-officeboard-webapp]$ tree
+.
+|-- README_en.md
+|-- README_kr.md
+|-- app.js
+|-- images
+|-- package-lock.json
+|-- package.json
+|-- public
+|   `-- stylesheets
+|       |-- main.css
+|       `-- table.css
+|-- routes
+|   `-- index.js
+`-- views
+    |-- error.ejs
+    `-- index.ejs
+
+
 ```
 
 ### Packaging
 ```shell
-[~]$ cd samplemsa-officeboard-webapp
 [~/samplemsa-officeboard-webapp]$ npm install
 ```
 

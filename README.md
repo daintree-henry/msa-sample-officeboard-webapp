@@ -29,11 +29,30 @@ $ npm -v
 ### 소스 코드 다운로드
 ```shell
 [~]$ git clone https://github.com/daintree-henry/msa-sample-officeboard-webapp.git
+[~]$ cd samplemsa-officeboard-webapp
+[~/samplemsa-officeboard-webapp]$ tree
+.
+|-- README_en.md
+|-- README_kr.md
+|-- app.js
+|-- images
+|-- package-lock.json
+|-- package.json
+|-- public
+|   `-- stylesheets
+|       |-- main.css
+|       `-- table.css
+|-- routes
+|   `-- index.js
+`-- views
+    |-- error.ejs
+    `-- index.ejs
+
+
 ```
 
 ### 패키징
 ```shell
-[~]$ cd samplemsa-officeboard-webapp
 [~/samplemsa-officeboard-webapp]$ npm install
 ```
 
