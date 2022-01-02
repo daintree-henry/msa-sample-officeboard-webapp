@@ -16,11 +16,13 @@
 
 ### 사전 준비
 ```shell
-#nodejs 설치 필요
+# 연관 프로젝트 (tag:regacy/v1.0)가 모두 실행 중이어야 함
+# 각 API가 실행 중이지 않을 경우 WEBAPP은 정상적으로 실행되지만 API server error 메세지를 테이블에 리턴
+# nodejs 설치 필요
 $ node -v
-v12.22.8
+v16.13.1
 $ npm -v
-6.14.15
+8.1.2
 
 ```
 
@@ -39,3 +41,13 @@ $ npm -v
 ```shell
 [~/samplemsa-officeboard-webapp]$ npm start
 ```
+
+### 테스트
+브라우저에서 http://localhost:3000/webapp 접속
+
+1. 각 API 서버가 실행 중인 경우
+![](images/architecture.png)  
+
+2. WEBAPP 만 실행할 경우
+![](images/dashboard.png)  
+   
