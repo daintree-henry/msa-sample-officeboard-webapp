@@ -5,8 +5,8 @@ var router = express.Router();
 
 router.get('/', function(req, res) {
     let data = new Object()
-    const itemurl = "http://" + process.env.ItemURL + "/api/items"
-    const empurl = "http://" + process.env.EmpURL + "/api/employees"
+    const itemurl = "http://localhost:8081/api/items"
+    const empurl = "http://localhost:8080/api/employees"
 
     request({ uri: itemurl, method: "GET", timeout: 5000 }, function(error, response, body) {
         if (!error && response.statusCode < 300) {
